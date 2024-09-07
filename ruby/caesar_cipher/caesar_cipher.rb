@@ -1,5 +1,3 @@
-require 'byebug'
-
 def caesar_cipher(string, fix_num)
   cipher = ''
 
@@ -20,4 +18,4 @@ def converted_char(char, fix_num)
   ((char.ord - ascii_pivot + fix_num) % 26 + ascii_pivot).chr
 end
 
-puts caesar_cipher('What a string!', 5)  # Expected 'Bmfy f xywnsl!'
+puts caesar_cipher('What a string!', 5) # Expected 'Bmfy f xywnsl!'
